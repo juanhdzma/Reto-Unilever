@@ -2,11 +2,11 @@ import mysql.connector
 
 def startConnection():
     mydb = mysql.connector.connect(
-        host="sabanahack.c99opdt5oa43.us-east-1.rds.amazonaws.com",
-        user="admin",
-        password="admin1234",
+        host="",
+        user="",
+        password="",
         port=3306,
-        database="SabanaHack"
+        database=""
     )
     return mydb
 
