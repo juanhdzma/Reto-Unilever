@@ -1,0 +1,122 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<meta
+			name="description"
+			content="Web site created using create-react-app"
+		/>
+		<link rel="apple-touch-icon" href="/logo192.png" />
+		<link rel="manifest" href="/manifest.json" />
+		<title>Sabana Hack</title>
+		<script defer="" src="/static/js/bundle.js"></script>
+		<style>
+			body {
+				margin: 0;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+					'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+					'Helvetica Neue', sans-serif;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+
+			code {
+				font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+					monospace;
+			}
+		</style>
+		<style>
+			.App {
+				text-align: center;
+			}
+
+			.products {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+			}
+
+			.buttons {
+				display: flex;
+				justify-content: space-evenly;
+				padding-bottom: 3%;
+			}
+		</style>
+		<style>
+			.product {
+				border: 10px solid black;
+				display: flex;
+				flex-direction: row;
+				margin: 3%;
+			}
+
+			img {
+				width: 50%;
+				margin: 0;
+				padding: 0;
+			}
+
+			.info {
+				text-align: left;
+				vertical-align: center;
+			}
+		</style>
+		<style>
+			.nextProduct {
+				border: 10px solid black;
+				margin: 5%;
+			}
+		</style>
+		<style>
+			.img-button {
+				width: 5%;
+			}
+
+			.div-button {
+				display: contents;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="root">
+			<div class="App">
+				<div class="products">
+					<div class="product">
+						<img src="../static//Images/{{ foto }}" alt="Producto" />
+						<div class="info">
+							<h1> Nombre: {{ nombre }}</h1>
+							<h3> ID: {{ id }}</h3>
+                            <h4> Cantidad: {{ cantidad }}</h4>
+							<p>
+                                {{ descripcion }}
+							</p>
+                            <ul>
+                                <li>
+
+                                </li>
+                            </ul>
+						</div>
+					</div>
+					<div class="nextProduct">
+						<img src="../static/Images/{{ fotoSig }}" alt="Producto" />
+						<h2>{{ siguiente }}</h2>
+					</div>
+				</div>
+				<div class="buttons">
+					<div class="div-button">
+						<img src=".templates/Images/checked.png" alt="Icon" class="img-button" />
+					</div>
+					<div class="div-button">
+						<img src=".templates/Images/cleaning.png" alt="Icon" class="img-button" />
+					</div>
+					<div class="div-button">
+						<img src=".templates/Images/cancel.png" alt="Icon" class="img-button" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

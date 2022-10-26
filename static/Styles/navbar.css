@@ -1,0 +1,71 @@
+/*Header*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+}
+header{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+    z-index: 1000;
+    transition: 0.6s;
+    height: 150px;
+    background-color: #1c34c4;
+}
+
+header.sticky{
+	position: fixed;
+	height: 100px;
+    padding: 5px;
+    background: #4c5cd4;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+
+header .logo{
+    position: relative;
+    transition: 0.6s;
+    height: 100px;
+    max-height: 90%;
+    margin-left: 2vw;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2vw;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 300;
+    transition: 0.6s;
+}
+
+header ul li a:hover{
+    background-color: #424b935f;
+    padding: 0.6em;
+    border-radius: 5px;
+}
+
+header.sticky .logo, 
+header.sticky ul li a{
+    color: #ffffff;
+}
